@@ -1,0 +1,721 @@
+@prefix : <http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/> .
+
+<http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#argument1
+<http://www.w3.org/2003/11/swrl#argument1> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#argument2
+<http://www.w3.org/2003/11/swrl#argument2> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#body
+<http://www.w3.org/2003/11/swrl#body> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#classPredicate
+<http://www.w3.org/2003/11/swrl#classPredicate> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#head
+<http://www.w3.org/2003/11/swrl#head> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#propertyPredicate
+<http://www.w3.org/2003/11/swrl#propertyPredicate> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/11/swrl#variable
+<http://www.w3.org/2003/11/swrl#variable> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER
+:COMMENTER rdf:type owl:ObjectProperty ;
+           rdfs:domain :User ;
+           rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER_DOMAIN
+:COMMENTER_DOMAIN rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Domain ;
+                  rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER
+:MEMBER rdf:type owl:ObjectProperty ;
+        rdfs:domain :User ;
+        rdfs:range :Domain .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER
+:OWNER rdf:type owl:ObjectProperty ;
+       rdfs:domain :User ;
+       rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER_DOMAIN
+:OWNER_DOMAIN rdf:type owl:ObjectProperty ;
+              rdfs:domain :Domain ;
+              rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT
+:PARENT rdf:type owl:ObjectProperty ,
+                 owl:TransitiveProperty ;
+        rdfs:domain :Document ;
+        rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER
+:VIEWER rdf:type owl:ObjectProperty ;
+        rdfs:domain :User ;
+        rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER_DOMAIN
+:VIEWER_DOMAIN rdf:type owl:ObjectProperty ;
+               rdfs:domain :Domain ;
+               rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER
+:WRITER rdf:type owl:ObjectProperty ;
+        rdfs:domain :User ;
+        rdfs:range :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER_DOMAIN
+:WRITER_DOMAIN rdf:type owl:ObjectProperty ;
+               rdfs:domain :Domain ;
+               rdfs:range :Document .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document
+:Document rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain
+:Domain rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument
+:PublicDocument rdf:type owl:Class ;
+                rdfs:subClassOf :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User
+:User rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Admins
+:Admins rdf:type owl:NamedIndividual ,
+                 :Domain ;
+        :WRITER_DOMAIN :Article-1-1 .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Artem
+:Artem rdf:type owl:NamedIndividual ,
+                :User ;
+       :OWNER :Article-1 .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1
+:Article-1 rdf:type owl:NamedIndividual ,
+                    :Document ;
+           :PARENT :Article-1-1 .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1
+:Article-1-1 rdf:type owl:NamedIndividual ,
+                      :Document ;
+             :PARENT :Article-1-1-1 .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1-1
+:Article-1-1-1 rdf:type owl:NamedIndividual ,
+                        :Document .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/John
+:John rdf:type owl:NamedIndividual ,
+               :User ;
+      :MEMBER :Admins .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Kira
+:Kira rdf:type owl:NamedIndividual ,
+               :User .
+
+
+###  http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicArticle-1
+:PublicArticle-1 rdf:type owl:NamedIndividual ,
+                          :Document ,
+                          :PublicDocument .
+
+
+[ <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+  <http://www.w3.org/2003/11/swrl#variable> :u
+] .
+
+[ <http://www.w3.org/2003/11/swrl#classPredicate> :PublicDocument ;
+   <http://www.w3.org/2003/11/swrl#variable> :d
+ ] .
+
+[ <http://www.w3.org/2003/11/swrl#argument1> :u ;
+   <http://www.w3.org/2003/11/swrl#argument2> :d ;
+   <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:AllUsersCanViewPublicDocumentsRule <http://www.w3.org/2003/11/swrl#body> [ ] ;
+<http://www.w3.org/2003/11/swrl#head> [ ] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:u rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:d rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:child rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:dom rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is commenter of the document is a viewer of the document" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is owner of the document is a writer of the document" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :OWNER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is writer of the document is a commenter of the document" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user has VIEWER relation with all Public Documents" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :PublicDocument ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is owner of the document is a owner of the child documents also" ;
+   rdfs:label "S5" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :OWNER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :child
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :PARENT ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :OWNER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is viewer of the document is a viewer of the child documents also" ;
+   rdfs:label "S8" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :child
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :PARENT ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is writer of the document is a write of the child documents also" ;
+   rdfs:label "S6" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :child
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :PARENT ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is member of the commenter_domain related to a document is a commenter of the document" ;
+   rdfs:label "S911" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Domain ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :dom
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :MEMBER ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :dom
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER_DOMAIN ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :dom ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is commenter of the document is a commenter of the child documents also" ;
+   rdfs:label "S7" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :child
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :PARENT ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :COMMENTER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :child
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is member of the owner_domain related to a document is a owner of the document" ;
+   rdfs:label "S9" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Domain ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :dom
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :MEMBER ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :dom
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :OWNER_DOMAIN ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :dom ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :OWNER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is member of the viewer_domain related to a document is a viewer of the document" ;
+   rdfs:label "S912" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Domain ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :dom
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :MEMBER ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :dom
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER_DOMAIN ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :dom ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :VIEWER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Any user who is member of the writer_domain related to a document is a writer of the document" ;
+   rdfs:label "S910" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :User ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Document ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Domain ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :dom
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :MEMBER ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :dom
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER_DOMAIN ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :dom ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :WRITER ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

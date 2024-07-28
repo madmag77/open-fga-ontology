@@ -1,0 +1,1235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/"
+     xml:base="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument1"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument2"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#body -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#body"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#classPredicate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#classPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#head -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#head"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#propertyPredicate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#propertyPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#variable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#variable"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER_DOMAIN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER_DOMAIN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER_DOMAIN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER_DOMAIN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER_DOMAIN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER_DOMAIN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER_DOMAIN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER_DOMAIN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Admins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Admins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+        <WRITER_DOMAIN rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Artem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Artem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <OWNER rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+        <PARENT rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+        <PARENT rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Article-1-1-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <MEMBER rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Admins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Kira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Kira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicArticle-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicArticle-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+        <swrl:variable rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument"/>
+        <swrl:variable rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/AllUsersCanViewPublicDocumentsRule">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is commenter of the document is a viewer of the document</rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is owner of the document is a writer of the document</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is writer of the document is a commenter of the document</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user has VIEWER relation with all Public Documents</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PublicDocument"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is owner of the document is a owner of the child documents also</rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is viewer of the document is a viewer of the child documents also</rdfs:comment>
+        <rdfs:label>S8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is writer of the document is a write of the child documents also</rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is member of the commenter_domain related to a document is a commenter of the document</rdfs:comment>
+        <rdfs:label>S911</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER_DOMAIN"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is commenter of the document is a commenter of the child documents also</rdfs:comment>
+        <rdfs:label>S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/PARENT"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/COMMENTER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/child"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is member of the owner_domain related to a document is a owner of the document</rdfs:comment>
+        <rdfs:label>S9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER_DOMAIN"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/OWNER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is member of the viewer_domain related to a document is a viewer of the document</rdfs:comment>
+        <rdfs:label>S912</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER_DOMAIN"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/VIEWER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Any user who is member of the writer_domain related to a document is a writer of the document</rdfs:comment>
+        <rdfs:label>S910</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/User"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Document"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/Domain"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/MEMBER"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER_DOMAIN"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/dom"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/WRITER"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/u"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/artemgoncharov/ontologies/2024/6/untitled-ontology-6/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
