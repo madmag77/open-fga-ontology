@@ -1,5 +1,6 @@
 # Modeling one of the OpenFGA schemas as an Ontology
 
+[Article on Medium](https://artem-goncharov.medium.com/modelling-rebac-access-control-system-with-ontologies-and-graph-databases-1ddab8b8bcf4) with the detailed modeling process description.
 
 [OpenFGA](https://openfga.dev/docs/fga) is a [ReBAC](https://en.wikipedia.org/wiki/Relationship-based_access_control) system based on the principles Google used to create their own ReBAC system, Zanzibar, as described in this [paper](https://storage.googleapis.com/gweb-research2023-media/pubtools/5068.pdf).
 
