@@ -57,7 +57,7 @@ class TestOntology(unittest.TestCase):
         self.assertNotIn(self.article1, self.john.WRITER) # no way to go upwards of the documents hierarchy
 
     def test_all_users_viewers_of_public_documents(self):
-        self.assertIn(self.public_article, self.kira.WRITER)
+        self.assertIn(self.public_article, self.kira.VIEWER)
 
     def test_owner_also_write_children_documents(self):
         self.assertIn(self.article1, self.artem.WRITER)
